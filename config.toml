@@ -1,0 +1,8 @@
+    num_lines = 20 # total lines including full and random lines
+    num_full_lines_top = 3
+    supp_margin = 2.5 # support frame
+    parts_to_leave_bottom = 8 # = n, means bottom h/n will be left alone
+    parts_to_leave_top = 30 # = n,  top h/n will be left alons
+    mid_supp_margin = 1.5 # grap in inches left for middle support frame
+    y_step = 1.5 # in inches gap between full lines at the top in inches
+    len_lower_limit = 18 # 1.5 ft
