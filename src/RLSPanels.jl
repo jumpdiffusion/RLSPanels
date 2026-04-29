@@ -48,8 +48,12 @@ function generate_rect_data(w, h;
     parts_to_leave_top=30, 
     mid_supp_margin=1.5,
     y_step = 1.5, # gap between full lines at the top in inches
-    len_lower_limit = 18 # 1.5 ft
+    parts_len_lower_limit = 6 # = n means min len = w/n
 )
+    # # debugging
+    # @show parts_len_lower_limit
+
+    # start function
     lines_data = LineSegment[]
 
     # current_h = supp_margin + (h/parts_to_leave_top)
@@ -74,7 +78,7 @@ function generate_rect_data(w, h;
     yb = h - max(supp_margin, (h/parts_to_leave_bottom)) # bottom y limit for random line
 
     for _ in 1:num_lines - num_full_lines_top
-        line_seg_len = rand(Uniform(len_lower_limit, w - 2*supp_margin))
+        line_seg_len = rand(Uniform(w/parts_len_lower_limit, w - 2*supp_margin))
         current_y = rand(Uniform(yt, yb))
         x_left = rand(Uniform(supp_margin, w - supp_margin - line_seg_len))
         x_right = x_left + line_seg_len

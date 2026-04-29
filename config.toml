@@ -5,4 +5,4 @@
     parts_to_leave_top = 30 # = n,  top h/n will be left alons
     mid_supp_margin = 1.5 # grap in inches left for middle support frame
     y_step = 1.5 # in inches gap between full lines at the top in inches
-    len_lower_limit = 18 # 1.5 ft
+    parts_len_lower_limit = 7 # = n means w/n will be shortest line segment
