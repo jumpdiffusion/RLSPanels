@@ -1,4 +1,4 @@
-    num_lines = 10 # total lines including full and random lines
+    num_lines = 12 # total lines including full and random lines
     num_full_lines_top = 2
     supp_margin = 2.5 # support frame
     parts_to_leave_bottom = 10 # = n, means bottom h/n will be left alone
